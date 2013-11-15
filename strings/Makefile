@@ -17,7 +17,7 @@ all: 1_example
 
 1_example: example.c
 	swig -python example.i
-	$(CC) $(CFLAGS) example.c example_wrap.c -I/usr/include/python2.6 -I/usr/lib/python2.6
+	$(CC) $(CFLAGS) example.c example_wrap.c -I/usr/include/python2.7 -I/usr/lib/python2.7
 	$(LD) $(LDFLAGS) -o _example.so example.o example_wrap.o
 
 clean:
